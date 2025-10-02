@@ -1,20 +1,27 @@
 # example_router_antd
 
-Простой пример использования роутера и подключения таблицы из ant design библиотеки компонентов
+Простой пример использования роутера и подключения таблицы из ant design библиотеки компонентов.
+Настроены 2 пути в url: / и /table
+Настройки в файле src/app/router.jsx
 
-# React + Vite
+# План работ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## По функционалу
 
-Currently, two official plugins are available:
+1. На главной странице прикрутить tabs из библиотеки antd. 3 вкладки как на макете, внутри пока любые кнопки.
+2. Добавить ещё необходимое количество страниц (по макету).
+3. Настроить роутинг: чтобы с главной по кнопкам из п.1 можно было переходить на страницы из п.2
+4. На одной из страниц отобразить таблицу (пример есть в коде). Данные для таблицы вынести в отдельный файлик с названием data.js.
+5. Настроить фильтры в таблице.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## По улучшению настроек проекта
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Настроить подключение стилей из scss файлов/
+2. Bспользовать файлы - модули для подключения стилей: customers.module.scss.
+3. Настроить, чтобы пути для импорта файлов были прямыми:
+   'pages/customers/Customers'
+   вместо  '../pages/customers/Customers'
+4. Добавить breadcrumbs для понимания, на какой мы странице, и для возможности возвращения назад на Главную.
+5. Создать git репозиторий, и заливать туда commit-ы с каждой задачей отдельно.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
